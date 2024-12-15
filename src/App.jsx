@@ -1,22 +1,25 @@
 import todoLogo from '/todo.png'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Cabecera from './componentes/Cabecera';
+import Educacion from './componentes/Educacion';
 function App() {
 
   return (
     <>
-      <div>
-        <a href="#" target="_blank">
-          <img src={todoLogo} className="logo" alt="Todo logo" />
-        </a>
+      <div className="d-flex justify-content-center align-items-center vh-100 bg-inicio roboto-mono">
+        <div className="text-center">
+          <Cabecera />
+          <p className="read-the-docs mt-4">
+            23 años
+          </p>
+        </div>
       </div>
-      <h1>Valentina Fanelli Addiechi</h1>
-      <p>Ingeniera en computación</p>
-      <p>Desarrolladora</p>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="d-flex justify-content-center  vh-100 roboto-mono">
+        <div className="text-center m-2">
+          <Educacion/>
+        </div>
+      </div>
     </>
   )
 }
