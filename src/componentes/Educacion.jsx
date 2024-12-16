@@ -4,7 +4,7 @@ function Educacion() {
 
   return (
     <>
-        <h3>Educación</h3>
+        <h3 className="text-white m-4">Educación</h3>
         <p className="read-the-docs mt-4">
             Click on the Vite and React logos to learn more
         </p>
