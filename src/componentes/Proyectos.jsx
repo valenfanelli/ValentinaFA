@@ -16,9 +16,9 @@ function Proyectos() {
                         <Card.Text>
                             Tienda de E-commerce realizada como proyecto final del curso Reactjs de Coder House
                         </Card.Text>
-                        <Button variant="info" href="valentech.netlify.app/" target="_blank">
+                        <a className="btn-custom" href="valentech.netlify.app/" target="_blank" rel="noopener noreferrer">
                             Ver Proyecto
-                        </Button>
+                        </a>
                         </Card.Body>
                     </Card>
                 </div>
@@ -27,11 +27,11 @@ function Proyectos() {
                         <Card.Body>
                         <Card.Title>Freelancer</Card.Title>
                         <Card.Text>
-                            Proyecto desarrollo web con HTML y CSS en Udemy
+                            Proyecto de desarrollo web realizado con HTML y CSS en el curso fullstack de Udemy
                         </Card.Text>
-                        <Button variant="info" href="https://clever-bubblegum-0389a8.netlify.app" target="_blank">
+                        <a className="btn-custom" href="https://clever-bubblegum-0389a8.netlify.app" target="_blank" rel="noopener noreferrer">
                             Ver Proyecto
-                        </Button>
+                        </a>
                         </Card.Body>
                     </Card>
                 </div>
@@ -42,11 +42,11 @@ function Proyectos() {
                         <Card.Body>
                         <Card.Title>Blog de Café</Card.Title>
                         <Card.Text>
-                            Proyecto desarrollo web con HTML y CSS en Udemy
+                            Proyecto de desarrollo web realizado con HTML y CSS en el curso fullstack de Udemy
                         </Card.Text>
-                        <Button variant="info" href="https://coruscating-centaur-78f2d6.netlify.app/" target="_blank">
+                        <a className="btn-custom" href="https://coruscating-centaur-78f2d6.netlify.app/" target="_blank" rel="noopener noreferrer">
                             Ver Proyecto
-                        </Button>
+                        </a>
                         </Card.Body>
                     </Card>
                 </div>
@@ -57,9 +57,9 @@ function Proyectos() {
                         <Card.Text>
                             Proyecto en equipo para la asignatura robótica donde se construyo un auto autonomo con comunicación ROS
                         </Card.Text>
-                        <Button variant="info" href="https://github.com/marigisee/ROS2-GestureCar" target="_blank">
+                        <a className="btn-custom" href="https://github.com/marigisee/ROS2-GestureCar" target="_blank" rel="noopener noreferrer">
                             Ver Proyecto
-                        </Button>
+                        </a>
                         </Card.Body>
                     </Card>
                 </div>

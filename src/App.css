@@ -9,12 +9,15 @@ html, body, #root {
   padding: 0;         /* Elimina padding por defecto */
 }
 .bg-inicio {
-  background-color: rgb(42, 84, 92);
+  background-color: #2A545C;
   color: rgb(255, 255, 255);
 }
 .bg-header {
   font-weight: bold;
-  background-color: rgb(26, 228, 194)!important;
+  background-color: #82AC9F!important;
+}
+.bg-sec {
+  background-color: #21272E;
 }
 .custom-card-img {
   width: 100%;            /* La imagen ocupa el 100% del ancho del contenedor */
@@ -25,6 +28,14 @@ html, body, #root {
   color: white;           /* Cambia el color del texto a blanco */
   text-decoration: none;  /* Elimina el subrayado */
   &:hover {
-    color: #1caedf;         /* Cambia el color al pasar el ratón (azul claro) */
+    color: #957964;         /* Cambia el color al pasar el ratón */
   }
+}
+.btn-custom {
+  background-color: #82AC9F; /* Color de fondo personalizado */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
 }

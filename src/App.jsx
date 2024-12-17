@@ -17,7 +17,7 @@ function App() {
           </h5>
         </div>
       </div>
-      <div className="d-flex justify-content-center  vh-100 roboto-mono">
+      <div className="d-flex justify-content-center  bg-sec vh-100 roboto-mono">
         <div className="text-center m-2">
           <Educacion/>
         </div>
@@ -27,7 +27,7 @@ function App() {
           <Proyectos/>
         </div>
       </div>
-      <div className="d-flex justify-content-center vh-75 roboto-mono">
+      <div className="d-flex justify-content-center bg-sec vh-75 roboto-mono">
         <div className="text-center m-2">
           <Contacto/>
         </div>
