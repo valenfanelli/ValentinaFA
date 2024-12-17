@@ -22,7 +22,7 @@ function App() {
           <Educacion/>
         </div>
       </div>
-      <div className="d-flex justify-content-center bg-inicio vh-75 roboto-mono">
+      <div className="d-flex justify-content-center bg-proyectos vh-75 roboto-mono">
         <div className="text-center m-2">
           <Proyectos/>
         </div>
