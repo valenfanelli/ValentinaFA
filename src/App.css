@@ -19,7 +19,8 @@ html, body, #root {
 }
 .bg-header {
   font-weight: bold;
-  background-color: #82AC9F!important;
+  background: rgb(67,147,166)!important;
+  background: linear-gradient(90deg, rgba(67,147,166,1) 0%, rgba(69,114,122,1) 44%, rgba(133,87,158,1) 89%)!important;
 }
 .bg-sec {
   background-color: #21272E;
@@ -32,12 +33,13 @@ html, body, #root {
 .enlaces{
   color: white;           /* Cambia el color del texto a blanco */
   text-decoration: none;  /* Elimina el subrayado */
+  font-weight: lighter;
   &:hover {
     color: #957964;         /* Cambia el color al pasar el ratón */
   }
 }
 .btn-custom {
-  background-color: #82AC9F; /* Color de fondo personalizado */
+  background: #B0C0BC;
   color: black;
   border: none;
   border-radius: 5px;
