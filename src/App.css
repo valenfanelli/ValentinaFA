@@ -49,3 +49,6 @@ html, body, #root {
     color: #ffffff;         /* Cambia el color al pasar el ratón */
   }
 }
+.navbar {
+  color: #ffffff;
+}
