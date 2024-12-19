@@ -24,8 +24,8 @@ function Cabecera() {
               />
               </h1>
               <div className="container text-center">
-                  <h3>Ingeniera en computación</h3>
-                  <h3>Desarrolladora web</h3>
+                  <h4>Ingeniera en computación</h4>
+                  <h4>Desarrolladora web</h4>
               </div>
               <h5 className="mt-4">23 años</h5>
             </div>

@@ -10,20 +10,13 @@ html, body, #root {
 }
 .bg-inicio {
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,84,92,1) 70%, rgba(0,212,255,1) 100%);
+  background: radial-gradient(circle, #14647f, #16677f, #186a7f, #1c6d7f, #21707f);
   color: rgb(255, 255, 255);
-}
-.bg-proyectos {
-  background-color: #2A545C;
-  color: white;
 }
 .bg-header {
   font-weight: bold;
   background: rgb(67,147,166)!important;
   background: linear-gradient(90deg, rgba(67,147,166,1) 0%, rgba(69,114,122,1) 44%, rgba(133,87,158,1) 89%)!important;
-}
-.bg-sec {
-  background-color: #21272E;
 }
 .custom-card-img {
   width: 100%;            /* La imagen ocupa el 100% del ancho del contenedor */
@@ -39,16 +32,76 @@ html, body, #root {
   }
 }
 .btn-custom {
-  background: #B0C0BC;
-  color: black;
+  background: #104e63;
+  color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   text-decoration: none;
   &:hover {
-    color: #ffffff;         /* Cambia el color al pasar el ratón */
+    color: #59d1b7;         /* Cambia el color al pasar el ratón */
   }
 }
 .navbar {
   color: #ffffff;
+}
+.item {
+  border: 2px solid black;
+  color: white;
+  margin: 10px auto;          /* Centra horizontalmente el contenedor en la página */
+  padding: 20px;              /* Más padding para espaciar el contenido */
+  width: 400px;               /* Ancho fijo opcional */
+  height: 300px;
+  text-align: center;         /* Centra el texto */
+  display: flex;              /* Usa Flexbox */
+  flex-direction: column;     /* Apila los elementos verticalmente */
+  align-items: center;        /* Centra los elementos horizontalmente */
+  justify-content: center;    /* Centra los elementos verticalmente */
+  border-radius: 15px;        /* Bordes redondeados opcionales */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para mejor apariencia */
+  svg {
+    margin-bottom: 10px;        /* Espacio entre el ícono y el párrafo */
+    width: 40px;                /* Tamaño del ícono */
+    height: 40px;
+  }
+  
+  p {
+    font-size: 1.2em;           /* Tamaño de letra para el título */
+    margin-bottom: 10px;        /* Espacio debajo del título */
+    font-weight: bold;
+  }
+  
+  ul {
+    padding: 0;                 /* Elimina el padding por defecto de la lista */
+  }
+  
+  li {
+    list-style: none;           /* Elimina los puntos de la lista */
+    margin-bottom: 5px;         /* Espacio entre ítems de la lista */
+  }
+}
+.lenguajes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Columnas dinámicas con tamaño mínimo de 100px */
+  gap: 2rem;                     /* Espacio entre los elementos */
+  justify-items: center;         /* Centra cada elemento dentro de su celda */
+  align-items: center;           /* Alinea verticalmente los elementos */
+  max-width: 800px;              /* Ancho máximo del contenedor */
+  margin: 0 auto;                /* Centra el contenedor en la página */
+  padding: 2rem;    
+}
+.lenguaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 25%;
+  width: 150px;
+  padding: 1rem;
+  transition: transform .2s; /* Animation */
+  &:hover {
+    background-color: #104e63;
+    transform: scale(1.5); 
+  }
 }

@@ -5,7 +5,7 @@ function Contacto() {
 
   return (
     <>
-      <div className="d-flex justify-content-center bg-sec vh-75 roboto-mono">
+      <div className="d-flex justify-content-center bg-inicio vh-100 roboto-mono">
         <div className="text-center m-2">
           <Animacion animationClass="animate__wobble">
             <h3 className="text-white">Contacto</h3>
