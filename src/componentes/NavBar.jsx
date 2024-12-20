@@ -7,7 +7,7 @@ export const NavBar = () => {
                 <Link className="nav-item nav-link text-white" to="/perfil">Perfil</Link>
                 <Link className="nav-item nav-link text-white" to="/educacion">Educación</Link>
                 <Link className="nav-item nav-link text-white" to="/proyectos">Proyectos</Link>
-                <Link className="nav-item nav-link text-white" to="/lenguajes">Lenguajes</Link>
+                <Link className="nav-item nav-link text-white" to="/tecnologias">Tecnologias</Link>
                 <Link className="nav-item nav-link text-white" to="/contacto">Contacto</Link>
             </div>
         </nav>

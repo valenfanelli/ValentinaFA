@@ -10,9 +10,7 @@ const Animacion = ({ children, animationClass }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-        } /*else {
-          setIsVisible(false);
-        }*/
+        } 
       },
       {
         threshold: 0.5, // El 10% del elemento debe ser visible para activar la animación
