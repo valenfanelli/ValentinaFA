@@ -5,9 +5,9 @@ function Contacto() {
   return (
     <>
       <div className="d-flex bg-inicio justify-content-center vh-100 roboto-mono">
-        <div className="m-2">
-          <h3 className="text-center text-white p-2 bounce">Contacto</h3>
-          <div className="text-center contacto bounce-in-right">
+        <div className="m-2 fade-in-down">
+          <h3 className="text-center text-white p-2">CONTACTO</h3>
+          <div className="text-center contacto">
             <div className="container">
                 <ul class="fa-ul text-white fs-6">
                     <li className="text-start m-3">

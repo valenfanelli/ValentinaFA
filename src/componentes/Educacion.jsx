@@ -5,9 +5,9 @@ function Educacion() {
   return (
     <>
         <div className="d-flex justify-content-center bg-inicio w-100 roboto-mono">
-            <div className="text-center m-2">
-                <h3 className="text-white p-2 bounce">Educación</h3>
-                <div className="container text-center fade-in-up">
+            <div className="text-center m-2  fade-in-up">
+                <h3 className="text-white p-2">EDUCACIÓN</h3>
+                <div className="container text-center">
                     <div className="row">
                         <div className="col ">
                             <div className="item">

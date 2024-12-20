@@ -6,9 +6,9 @@ function Proyectos() {
   return (
     <>
         <div className="d-flex justify-content-center bg-inicio vh-100 w-100 roboto-mono">
-            <div className="text-center m-2">
-                <h3 className="p-2 bounce">Proyectos</h3>
-                <div className="container flip-in-y">
+            <div className="text-center m-2 fade-in-up">
+                <h3 className="p-2">PROYECTOS</h3>
+                <div className="container">
                     <div className="row m-4">
                         <div className="col">
                             <div className="proyecto">

@@ -120,9 +120,33 @@ html, body, #root {
   margin-top: 50px;
 }
 
-.perfil {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
+.perfil-content {
+  max-width: 900px;           /* Limita el ancho máximo del contenido */
+  background-color: #ffffff1a; /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 15px;        /* Bordes redondeados */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-texto {
+  color: white;               /* Color del texto */
+  font-size: 1.2rem;
+  line-height: 1.6;           /* Espaciado entre líneas */
+}
+
+.icono-perfil {
+  width: 80px;                /* Tamaño de las imágenes */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;         /* Hace que las imágenes sean circulares */
+  transition: transform 0.3s ease; /* Agrega una animación suave al pasar el mouse */
+}
+
+.icono-perfil:hover {
+  transform: scale(1.5);      /* Efecto de escala al pasar el mouse */
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
 }
