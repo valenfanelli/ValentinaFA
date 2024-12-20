@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import 'animate.css';
 
 const Animacion = ({ children, animationClass }) => {
   const [isVisible, setIsVisible] = useState(false);

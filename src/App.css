@@ -1,4 +1,5 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import 'animations.css';
 .roboto-mono{
   font-family: 'Roboto Mono', monospace;
 }
@@ -12,11 +13,13 @@ html, body, #root {
   background: rgb(2,0,36);
   background: radial-gradient(circle, #14647f, #16677f, #186a7f, #1c6d7f, #21707f);
   color: rgb(255, 255, 255);
+  min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
+  height: auto; 
 }
-.bg-header {
-  font-weight: bold;
-  background: rgb(67,147,166)!important;
-  background: linear-gradient(90deg, rgba(67,147,166,1) 0%, rgba(69,114,122,1) 44%, rgba(133,87,158,1) 89%)!important;
+.bg-nav {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, #14647f, #16677f, #186a7f, #1c6d7f, #21707f);
+  color: rgb(255, 255, 255);
 }
 .custom-card-img {
   width: 100%;            /* La imagen ocupa el 100% del ancho del contenedor */
@@ -48,16 +51,17 @@ html, body, #root {
 .item {
   border: 2px solid rgb(18, 82, 124);
   color: white;
-  margin: 10px auto;          /* Centra horizontalmente el contenedor en la página */
-  padding: 20px;              /* Más padding para espaciar el contenido */
-  width: 400px;               /* Ancho fijo opcional */
-  height: 300px;
-  text-align: center;         /* Centra el texto */
-  display: flex;              /* Usa Flexbox */
-  flex-direction: column;     /* Apila los elementos verticalmente */
-  align-items: center;        /* Centra los elementos horizontalmente */
-  justify-content: center;    /* Centra los elementos verticalmente */
-  border-radius: 15px;        /* Bordes redondeados opcionales */
+  margin: 10px auto;            /* Centra horizontalmente el contenedor */
+  padding: 20px;                /* Espaciado interno */
+  width: 100%;                  /* Usa el 100% del ancho disponible */
+  max-width: 400px;             /* Limita el ancho máximo */
+  height: auto;                 /* Altura ajustable según el contenido */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;          /* Bordes redondeados */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   svg {
     margin-bottom: 10px;        /* Espacio entre el ícono y el párrafo */
@@ -122,4 +126,3 @@ html, body, #root {
   align-items: center;
   text-align: center;
 }
-
