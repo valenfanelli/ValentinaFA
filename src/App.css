@@ -15,6 +15,15 @@ html, body, #root {
   color: rgb(255, 255, 255);
   min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
   height: auto; 
+  transition: background-color 0.8s ease;
+}
+.bg-sec {
+  background: rgb(14,69,88);
+  background: linear-gradient(90deg, rgba(14,69,88,1) 0%, rgba(24,101,121,1) 53%, rgba(18,68,78,1) 100%);
+  color: rgb(255, 255, 255);
+  min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
+  height: auto; 
+  transition: background-color 0.8s ease;
 }
 .bg-nav {
   background: rgb(2,0,36);
@@ -35,7 +44,7 @@ html, body, #root {
   }
 }
 .btn-custom {
-  background: #104e63;
+  background: #0d4355;
   color: white;
   border: none;
   border-radius: 5px;
@@ -112,12 +121,13 @@ html, body, #root {
 }
 .proyecto {
   padding: 50px;
-  box-shadow: 5px 10px #104e63;
+  box-shadow: 5px 10px #0d4355;
 }
 .contacto {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  font-size: large;
 }
 
 .perfil-content {
@@ -130,15 +140,14 @@ html, body, #root {
 
 .perfil-texto {
   color: white;               /* Color del texto */
-  font-size: 1.2rem;
+  font-size: large;
   line-height: 1.6;           /* Espaciado entre líneas */
 }
 
 .icono-perfil {
-  width: 80px;                /* Tamaño de las imágenes */
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;         /* Hace que las imágenes sean circulares */
+  width: 100px;                /* Tamaño de las imágenes */
+  height: 100px;
+  object-fit: cover;     /* Hace que las imágenes sean circulares */
   transition: transform 0.3s ease; /* Agrega una animación suave al pasar el mouse */
 }
 

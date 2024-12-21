@@ -6,10 +6,10 @@ import robot from '../img/robot.webp';
 
 function Perfil() {
   return (
-    <div className="bg-inicio vh-100 w-100 roboto-mono p-4">
+    <div className="bg-sec vh-100 w-100 roboto-mono p-4">
       <div className="fade-in-down  d-flex flex-column justify-content-center align-items-center ">
         <h3 className="text-white">PERFIL</h3>
-        <div className="perfil-content d-flex flex-wrap justify-content-center align-items-center">
+        <div className="perfil-content d-flex justify-content-center align-items-center">
           <img src={study} alt="Estudio" className="icono-perfil m-3" />
           
           <div className="perfil-texto p-4">
@@ -23,8 +23,6 @@ function Perfil() {
               Siempre estoy en búsqueda de nuevos desafíos que me permitan aprender y crecer profesionalmente.
             </p>
           </div>
-
-          <img src={engineer} alt="Ingeniería" className="icono-perfil m-3" />
           <img src={robot} alt="Robot" className="icono-perfil m-3" />
         </div>
       </div>
