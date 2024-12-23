@@ -79,7 +79,7 @@ html, body, #root {
   }
   
   p {
-    font-size: 1.2em;           /* Tamaño de letra para el título */
+    font-size: medium;        /* Tamaño de letra para el título */
     margin-bottom: 10px;        /* Espacio debajo del título */
     font-weight: bold;
   }
@@ -91,17 +91,18 @@ html, body, #root {
   li {
     list-style: none;           /* Elimina los puntos de la lista */
     margin-bottom: 5px;         /* Espacio entre ítems de la lista */
+    font-size: small;
   }
 }
 .lenguajes {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Columnas dinámicas con tamaño mínimo de 100px */
-  gap: 2rem;                     /* Espacio entre los elementos */
+  gap: 1rem;                     /* Espacio entre los elementos */
   justify-items: center;         /* Centra cada elemento dentro de su celda */
   align-items: center;           /* Alinea verticalmente los elementos */
   max-width: 800px;              /* Ancho máximo del contenedor */
   margin: 0 auto;                /* Centra el contenedor en la página */
-  padding: 2rem;    
+  padding: 1rem;    
 }
 .lenguaje {
   display: flex;
@@ -112,6 +113,7 @@ html, body, #root {
   border-radius: 25%;
   width: 150px;
   padding: 1rem;
+  font-size: small;
   transition: transform .2s; /* Animacion */
   box-shadow: 0px 5px #083646;
   &:hover {
@@ -122,12 +124,15 @@ html, body, #root {
 .proyecto {
   padding: 50px;
   box-shadow: 5px 10px #0d4355;
+  p {
+    font-size: small;
+  }
 }
 .contacto {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  font-size: large;
+  font-size: medium;
 }
 
 .perfil-content {
@@ -140,13 +145,13 @@ html, body, #root {
 
 .perfil-texto {
   color: white;               /* Color del texto */
-  font-size: large;
+  font-size: medium;
   line-height: 1.6;           /* Espaciado entre líneas */
 }
 
 .icono-perfil {
-  width: 100px;                /* Tamaño de las imágenes */
-  height: 100px;
+  width: 200px;                /* Tamaño de las imágenes */
+  height: 200px;
   object-fit: cover;     /* Hace que las imágenes sean circulares */
   transition: transform 0.3s ease; /* Agrega una animación suave al pasar el mouse */
 }

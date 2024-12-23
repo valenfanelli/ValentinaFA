@@ -1,7 +1,5 @@
 import React from "react";
-import study from '../img/study.png';
-import engineer from '../img/engineer.png';
-import desarrollo from '../img/desarrollo.png';
+import auto from '../img/auto.png';
 import robot from '../img/robot.webp';
 
 function Perfil() {
@@ -10,7 +8,7 @@ function Perfil() {
       <div className="fade-in-down  d-flex flex-column justify-content-center align-items-center ">
         <h3 className="text-white">PERFIL</h3>
         <div className="perfil-content d-flex justify-content-center align-items-center">
-          <img src={study} alt="Estudio" className="icono-perfil m-3" />
+          <img src={auto} alt="Robot Car" className="icono-perfil m-3" />
           
           <div className="perfil-texto p-4">
             <p className="mb-4">

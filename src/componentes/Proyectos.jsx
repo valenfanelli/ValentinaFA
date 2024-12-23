@@ -12,7 +12,7 @@ function Proyectos() {
                     <div className="row m-4">
                         <div className="col">
                             <div className="proyecto">
-                                <h4>Valentech</h4>
+                                <h5>Valentech</h5>
                                 <p>Tienda de E-commerce realizada como proyecto final del curso Reactjs de Coder House</p>
                                 <a className="btn-custom" href="https://valentech.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     Ver Proyecto
@@ -21,7 +21,7 @@ function Proyectos() {
                         </div>
                         <div className="col">
                             <div className="proyecto">
-                                <h4>Freelancer</h4>
+                                <h5>Freelancer</h5>
                                 <p>Proyecto de desarrollo web realizado con HTML y CSS en el curso fullstack de Udemy</p>
                                 <a className="btn-custom" href="https://clever-bubblegum-0389a8.netlify.app" target="_blank" rel="noopener noreferrer">
                                     Ver Proyecto
@@ -32,7 +32,7 @@ function Proyectos() {
                     <div className="row m-4">
                         <div className="col">
                             <div className="proyecto">
-                                <h4>Blog de Café</h4>
+                                <h5>Blog de Café</h5>
                                 <p>Proyecto de desarrollo web realizado con HTML y CSS en el curso fullstack de Udemy</p>
                                 <a className="btn-custom" href="https://coruscating-centaur-78f2d6.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     Ver Proyecto
@@ -41,7 +41,7 @@ function Proyectos() {
                         </div>
                         <div className="col">
                             <div className="proyecto">
-                                <h4>Ros2 Gesture Car</h4>
+                                <h5>Ros2 Gesture Car</h5>
                                 <p>Proyecto en equipo para la asignatura robótica donde se construyo un auto autonomo con comunicación ROS</p>
                                 <a className="btn-custom" href="https://github.com/marigisee/ROS2-GestureCar" target="_blank" rel="noopener noreferrer">
                                     Ver Proyecto
