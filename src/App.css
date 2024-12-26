@@ -4,6 +4,9 @@
 .roboto-mono{
   font-family: 'Roboto Mono', monospace;
 }
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
 html, body, #root {
   height: 100%;       /* Ocupa el 100% de la altura */
   width: 100%;        /* Ocupa el 100% del ancho */
@@ -16,15 +19,20 @@ html, body, #root {
   color: rgb(255, 255, 255);
   min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
   height: auto; 
-  transition: background-color 0.8s ease;
 }
 .bg-sec {
   background: rgb(14,69,88);
   background: linear-gradient(90deg, rgba(14,69,88,1) 0%, rgba(24,101,121,1) 53%, rgba(18,68,78,1) 100%);
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
   height: auto; 
-  transition: background-color 0.8s ease;
+}
+.bg-tec {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, #14647f, #16677f, #186a7f, #1c6d7f, #21707f);
+  color: #FFFFFF;
+  min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
+  height: auto; 
 }
 .bg-nav {
   background: rgb(2,0,36);
@@ -59,33 +67,40 @@ html, body, #root {
   color: #ffffff;
 }
 .item {
-  border: 2px solid rgb(18, 82, 124);
-  background-color: rgb(247, 244, 216);
+  border: 1px solid rgb(18, 82, 124);
   color: rgb(17, 17, 17);
   margin: 10px auto;            /* Centra horizontalmente el contenedor */
   padding: 20px;                /* Espaciado interno */
   width: 900px;                  /* Limita el ancho máximo */
-  height: auto;                 /* Altura ajustable según el contenido */
-  text-align: center;
   display: flex;
   flex-direction: row;
+  align-items: center; 
   justify-content: space-between;
-  border-radius: 15px;          /* Bordes redondeados */
+  border-radius: 10px;          /* Bordes redondeados */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   svg {
     margin-bottom: 10px;        /* Espacio entre el ícono y el párrafo */
     width: 40px;                /* Tamaño del ícono */
     height: 40px;
+    flex-shrink: 0; 
   }
-  
+  .titulo {
+    display: flex; /* Usa flex para alinear ícono y texto */
+    align-items: center; /* Centra verticalmente el ícono con el texto */
+    gap: 10px; /* Espacio entre ícono y texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
   p {
     font-size: medium;        /* Tamaño de letra para el título */
     margin-bottom: 10px;        /* Espacio debajo del título */
-    font-weight: bold;
   }
   
   ul {
-    padding: 0;                 /* Elimina el padding por defecto de la lista */
+    color: #ffffff;
+    padding: 0; /* Elimina padding de la lista */
+    margin: 0; /* Elimina márgenes */
+    list-style: none; /* Elimina los puntos de la lista */
+    text-align: right; /* Alinea el texto de la lista a la derecha */
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -101,13 +116,9 @@ html, body, #root {
   gap: 1rem;                     /* Espacio entre los elementos */
   justify-items: center;         /* Centra cada elemento dentro de su celda */
   align-items: center;           /* Alinea verticalmente los elementos */
-  max-width: 800px;              /* Ancho máximo del contenedor */
+  max-width: 900px;              /* Ancho máximo del contenedor */
   margin: 0 auto;                /* Centra el contenedor en la página */
   padding: 1rem;    
-  img {
-    width: 50px;
-    height: auto;
-  }
 }
 .lenguaje {
   display: flex;
@@ -115,13 +126,19 @@ html, body, #root {
   align-items: center;
   justify-content: center;
   color: black;
-  background-color: rgb(247, 244, 216);
-  border-radius: 25%;
-  width: 150px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
   padding: 1rem;
   font-size: small;
+  overflow: hidden;
   transition: transform .2s; /* Animacion */
-  box-shadow: 0px 5px #083646;
+  box-shadow: 5px 5px 0px #083646;
+  img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%; /* Ajusta la imagen al alto del contenedor */
+    object-fit: contain; /* Asegura que las imágenes llenen el contenedor */
+  }
   &:hover {
     transform: scale(1.5); 
   }
@@ -131,6 +148,7 @@ html, body, #root {
   box-shadow: 0px 5px #0d4355;
   p {
     font-size: small;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 .contacto {
@@ -153,30 +171,31 @@ html, body, #root {
 }
 
 .perfil-content {
-  max-width: 900px;           /* Limita el ancho máximo del contenido */
-  background-color: #ffffff09; /* Fondo semitransparente */
+  max-width: 900px;
   padding: 20px;
-  border-radius: 15px;        /* Bordes redondeados */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;               /* Asegura una disposición en fila */
+  gap: 2rem;                   /* Espaciado entre la imagen y el texto */
+  align-items: center;
+                    /* Fondo con gradiente suave */
 }
 
 .perfil-texto {
-  color: white;               /* Color del texto */
+  color: white;
   font-size: medium;
-  line-height: 1.6;           /* Espaciado entre líneas */
+  line-height: 1.8;
+  border-left: 2px solid white; /* Decoración de línea a la izquierda del texto */
+  padding-left: 20px;
 }
 
 .icono-perfil {
-  width: 200px;                /* Tamaño de las imágenes */
-  height: 200px;
-  object-fit: cover;     /* Hace que las imágenes sean circulares */
-  transition: transform 0.3s ease; /* Agrega una animación suave al pasar el mouse */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .icono-perfil:hover {
-  transform: scale(1.5);      /* Efecto de escala al pasar el mouse */
+  transform: scale(1.5);
 }
-
 h3 {
   font-size: 2rem;
   font-weight: bold;
@@ -274,4 +293,15 @@ h3 {
 
 .navbar-nav .nav-link:hover::after {
   width: 100%; /* Subrayado completo al pasar el cursor */
+}
+.emojis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  img {
+    width: 40px; /* Ajusta el ancho */
+    height: 40px; /* Ajusta el alto */
+    object-fit: contain; /* Mantiene las proporciones de la imagen */
+    margin: 5px; /* Añade un pequeño espacio entre los emojis */
+  }
 }
