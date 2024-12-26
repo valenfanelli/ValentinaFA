@@ -6,7 +6,7 @@ function Educacion() {
     <>
         <div className="d-flex justify-content-center bg-inicio w-100 roboto-mono">
             <div className="text-center m-2  fade-in-up">
-                <h3 className="text-white p-2">EDUCACIÓN</h3>
+                <h3 className="text-white p-2">Grados y Cursos</h3>
                 <div className="container text-center">
                             <div className="item">
                                 <div className="titulo">    

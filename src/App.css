@@ -28,8 +28,8 @@ html, body, #root {
   height: auto; 
 }
 .bg-tec {
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, #14647f, #16677f, #186a7f, #1c6d7f, #21707f);
+  background: rgb(33,112,127);
+background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%, rgba(16,75,96,1) 82%);
   color: #FFFFFF;
   min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
   height: auto; 
@@ -205,7 +205,7 @@ h3 {
   font-family: 'Montserrat', sans-serif; /* Fuente moderna sans-serif */
   font-size: 1.5rem; /* Ajustar tamaño */
   font-weight: 400; /* Normal para "Desarrolladora Web" */
-  color: #e5e5e5; /* Color gris claro */
+  color: #a1aeaf; /* Color gris claro */
 }
 
 
@@ -213,7 +213,7 @@ h3 {
   margin-top: 1.5rem;
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #c9d1d9;
+  color: #d4d6d8;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;

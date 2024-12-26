@@ -1,7 +1,7 @@
 import React from "react"
 import '../App.css';
-import html from '../img/HTML.png';
-import css from '../img/css.png';
+import html from '../img/html.png';
+import css from '../img/css.webp';
 import php from '../img/php.png';
 import c from '../img/C.png';
 import ch from '../img/ch.png';
