@@ -20,7 +20,7 @@ function Tecnologias() {
 
   return (
     <>
-      <div className="d-flex vh-100 bg-tec roboto-mono">
+      <div className="d-flex bg-tec roboto-mono">
         <div className="text-center w-100">
             <div className="container bounce-in-left">
               <h3 className="p-2">TECNOLOGÍAS</h3>

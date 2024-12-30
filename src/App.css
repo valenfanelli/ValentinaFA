@@ -29,7 +29,7 @@ html, body, #root {
 }
 .bg-tec {
   background: rgb(33,112,127);
-background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%, rgba(16,75,96,1) 82%);
+  background: linear-gradient(90deg, #21707f 24%, rgba(19,81,101,1) 44%, #104b60 82%);
   color: #FFFFFF;
   min-height: 100vh;          /* Garantiza que el contenedor tenga al menos el 100% de la altura de la pantalla */
   height: auto; 
@@ -78,6 +78,7 @@ background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%
   justify-content: space-between;
   border-radius: 10px;          /* Bordes redondeados */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  
   svg {
     margin-bottom: 10px;        /* Espacio entre el ícono y el párrafo */
     width: 40px;                /* Tamaño del ícono */
@@ -109,6 +110,13 @@ background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%
     margin-bottom: 5px;         /* Espacio entre ítems de la lista */
     font-size: small;
   }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    flex-direction: column;
+    ul {
+      text-align: center;
+    }
+  }
 }
 .lenguajes {
   display: grid;
@@ -119,7 +127,18 @@ background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%
   max-width: 900px;              /* Ancho máximo del contenedor */
   margin: 0 auto;                /* Centra el contenedor en la página */
   padding: 1rem;    
+  @media (max-width: 768px) {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+@media (max-width: 768px) {
+  .bg-tec {
+    background: rgb(16,75,96);
+    background: linear-gradient(0deg, rgba(16,75,96,1) 33%, rgba(30,111,133,1) 51%, rgba(33,112,127,1) 84%);
+  }
+}
+
 .lenguaje {
   display: flex;
   flex-direction: column;
@@ -141,6 +160,15 @@ background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%
   }
   &:hover {
     transform: scale(1.5); 
+  }
+}
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 2rem; /* Espaciado entre los elementos */
+  justify-items: center;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Una sola columna */
   }
 }
 .proyecto {
@@ -169,6 +197,16 @@ background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%
     margin: 0;               /* Elimina márgenes de los párrafos */
   }
 }
+@media (max-width: 768px) {
+  .pagina-contacto {
+    flex-direction: column; /* Cambia a columna para ajustar los elementos */
+    padding: 1rem;
+  }
+  .contacto {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 
 .perfil-content {
   max-width: 900px;
@@ -176,15 +214,37 @@ background: linear-gradient(90deg, rgba(33,112,127,1) 24%, rgba(19,81,101,1) 44%
   display: flex;               /* Asegura una disposición en fila */
   gap: 2rem;                   /* Espaciado entre la imagen y el texto */
   align-items: center;
-                    /* Fondo con gradiente suave */
 }
+@media (max-width: 768px) {
+  .perfil-content {
+    flex-direction: column;    /* Cambia a disposición en columna */
+    text-align: center;        /* Centra el texto */
+    gap: 1rem;                 /* Reduce el espaciado entre los elementos */
+    width: 100%;               /* Ocupa todo el ancho disponible */
+    padding: 20px 10px;
+    box-sizing: border-box; 
+  }
 
+  .icono-perfil {
+    width: 150px;              /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+  }
+  .perfil-texto {
+    border-top: 2px solid white; /* Decoración de línea a la izquierda del texto */
+    line-height: 1;
+  }
+}
+@media (min-width: 768px) {
+  .perfil-texto {
+    border-left: 2px solid white; /* Decoración de línea a la izquierda del texto */
+  }
+}
 .perfil-texto {
   color: white;
   font-size: medium;
   line-height: 1.8;
-  border-left: 2px solid white; /* Decoración de línea a la izquierda del texto */
   padding-left: 20px;
+  margin-bottom: 4;
 }
 
 .icono-perfil {
@@ -264,7 +324,14 @@ h3 {
   z-index: 1000;
   transition: background 0.3s ease;
 }
-
+@media (max-width: 992px) {
+  .mnavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .navbar.scrolled {
   background: #17697F; /* Fondo sólido al hacer scroll */
 }

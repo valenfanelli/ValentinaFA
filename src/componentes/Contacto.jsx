@@ -8,7 +8,7 @@ function Contacto() {
 
   return (
     <>
-      <div className="d-flex bg-sec justify-content-center vh-100 roboto-mono">
+      <div className="pagina-contacto d-flex bg-sec justify-content-center roboto-mono">
         <div className="m-2 fade-in-down">
           <h3 className="text-center text-white p-2">Donde puedes encontrarme</h3>
           <p className="text-center text-white p-2 montserrat ">¡Estoy emocionada por conocer tus ideas y proyectos! No dudes en escribirme</p>
