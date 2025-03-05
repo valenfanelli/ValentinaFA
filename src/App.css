@@ -332,12 +332,6 @@ h3 {
     justify-content: center;
   }
 }
-@media (max-width: 768px) {
-  .mnavbar {
-    display: none;
-    visibility: hidden;
-  }
-}
 .navbar.scrolled {
   background: #17697F; /* Fondo sólido al hacer scroll */
 }
