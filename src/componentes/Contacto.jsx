@@ -28,7 +28,7 @@ function Contacto() {
               </li>
               <li className="text-start m-3">
                 <i class="fa-li fas fa-envelope"></i>
-                <p className="enlaces">valenfa19@gmail.com</p>
+                <p className="enlaces">vfanelliaddiechi@gmail.com</p>
               </li>
           </ul>
         </div>

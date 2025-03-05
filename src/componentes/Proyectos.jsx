@@ -38,6 +38,13 @@ function Proyectos() {
                                 Ver Proyecto
                             </a>
                         </div>
+                        <div className="proyecto">
+                            <h5>React + TypeScript + Redux + Context API</h5>
+                            <p>Proyecto que combina diferentes técnicas de gestión del contexto en 3 ejemplos disponibles</p>
+                            <a className="btn-custom" href="https://valenfanelli.github.io/react-ts-context-redux/" target="_blank" rel="noopener noreferrer">
+                                Ver Proyecto
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
