@@ -20,7 +20,7 @@ function Contacto() {
           <ul class="fa-ul text-white contacto fs-5">
               <li className="text-start m-3">
                 <i class="fa-li fab fa-linkedin"></i>
-                <a className="enlaces" href="www.linkedin.com/in/valentinafanelliaddiechi">Linkedin</a>
+                <a className="enlaces" href="https://linkedin.com/in/valentinafanelliaddiechi">Linkedin</a>
               </li>
               <li className="text-start m-3">
                 <i class="fa-li fab fa-github"></i>
