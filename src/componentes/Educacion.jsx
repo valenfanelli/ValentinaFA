@@ -1,21 +1,23 @@
 import React from "react"
 import '../App.css'
+import { useTranslation } from "react-i18next";
 function Educacion() {
-
+  const { t } = useTranslation();
+  const items = t("edu_items", { returnObjects: true }); 
   return (
     <>
         <div className="d-flex justify-content-center bg-inicio w-100 roboto-mono">
             <div className="text-center m-2  fade-in-up">
-                <h3 className="text-white p-2">Grados y Cursos</h3>
+                <h3 className="text-white p-2">{t("edu_titulo")}</h3>
                 <div className="container text-center">
                             <div className="item">
                                 <div className="titulo">    
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-certificate"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" /><path d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" /></svg>
-                                    <p>Ingeniera en computación</p>
+                                    <p>{items[0].titulo}</p>
                                 </div>
                                 <ul>
-                                    <li>Universidad Nacional de La Plata</li>
-                                    <li>Promedio 8.2</li>
+                                    <li>{items[0].detalle_1}</li>
+                                    <li>{items[0].detalle_2} 8.2</li>
                                     <li>2024</li>
                                 </ul>
                             </div>
@@ -33,7 +35,7 @@ function Educacion() {
                             <div className="item">
                                 <div className="titulo">    
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" /><path d="M7 20h4" /><path d="M9 16v4" /><path d="M20 21l2 -2l-2 -2" /><path d="M17 17l-2 2l2 2" /></svg>
-                                    <p>Desarrollo Web Completo con HTML5,CSS3, JS AJAX PHP y MySQL</p>
+                                    <p>{items[1].titulo}</p>
                                 </div>
                                 <ul>
                                     <li>Udemy</li>
@@ -44,7 +46,7 @@ function Educacion() {
                             <div className="item">
                                 <div className="titulo">    
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-typescript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" /><path d="M9 12h4" /><path d="M11 12v6" /><path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" /></svg>
-                                    <p>React & Typescript - The Practical Guide</p>
+                                    <p>{items[2].titulo}</p>
                                 </div>
                                 <ul>
                                     <li>Udemy</li>
@@ -55,18 +57,18 @@ function Educacion() {
                             <div className="item">
                                 <div className="titulo">    
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-text-spark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5" /><path d="M9 9h1" /><path d="M9 13h6" /><path d="M9 17h3" /><path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5" /></svg>
-                                    <p>React (Basic)</p>
+                                    <p>React ({items[3].nivel})</p>
                                 </div>
                                 <ul>
                                     <li>HackerRank</li>
-                                    <li>Prueba de certificación de habilidades</li>
+                                    <li>{items[3].descripcion}</li>
                                     <li>2025</li>
                                 </ul>
                             </div>
                             <div className="item">
                                 <div className="titulo">    
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-typescript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" /><path d="M9 12h4" /><path d="M11 12v6" /><path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" /></svg>
-                                    <p>Domina TypeScript: Integración con React</p>
+                                    <p>{items[4].titulo}</p>
                                 </div>
                                 <ul>
                                     <li>Linkedin Learning</li>
@@ -88,12 +90,12 @@ function Educacion() {
                             <div className="item">
                                 <div className="titulo">    
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-school"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>
-                                    <p>Bachiller en ciencias sociales</p>
+                                    <p>{items[5].titulo}</p>
                                 </div>
 
                                 <ul>
                                     <li className="">Colegio Inmaculada de La Plata</li>
-                                    <li className="">Promedio 8.5</li>
+                                    <li className="">{items[5].detalle} 8.5</li>
                                     <li className="">2018</li>
                                 </ul>
                             </div>

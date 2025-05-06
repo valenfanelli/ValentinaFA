@@ -16,14 +16,15 @@ import javascript from '../img/JavaScript.png';
 import bootstrap from '../img/bootstrap.png';
 import arduino from '../img/arduino.png';
 import pgsql from '../img/pgsql.png';
+import { useTranslation } from "react-i18next";
 function Tecnologias() {
-
+  const { t } = useTranslation();
   return (
     <>
       <div className="d-flex bg-tec roboto-mono">
         <div className="text-center w-100">
             <div className="container bounce-in-left">
-              <h3 className="p-2">TECNOLOGÍAS</h3>
+              <h3 className="p-2">{t("tec_titulo")}</h3>
               <div className="text-center lenguajes">
                   <div className="lenguaje">
                     <img src={html}></img>

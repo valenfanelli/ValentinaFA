@@ -63,6 +63,16 @@ html, body, #root {
     color: #59d1b7;         /* Cambia el color al pasar el ratón */
   }
 }
+.btn-lang {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  &:hover {
+    border-color: #38859e;
+  }
+}
 .navbar {
   color: #ffffff;
 }
@@ -379,4 +389,17 @@ h3 {
     display: block;
     visibility: visible;
   }
+}
+.lang-toggle {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.lang-toggle:hover {
+  background-color: #f0f0f0;
 }

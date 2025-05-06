@@ -9,6 +9,7 @@ import Tecnologias from './componentes/Tecnologias';
 import Animacion from './componentes/Animacion';
 import { NavBar } from './componentes/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
 
   return (
