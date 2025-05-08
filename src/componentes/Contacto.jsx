@@ -3,15 +3,16 @@ import '../App.css';
 import study from '../img/study.png';
 import mano from '../img/mano.png';
 import buzon from '../img/buzon.png';
+import { useTranslation } from "react-i18next";
 
 function Contacto() {
-
+  const { t } = useTranslation();
   return (
     <>
       <div className="pagina-contacto d-flex bg-sec justify-content-center roboto-mono">
         <div className="m-2 fade-in-down">
-          <h3 className="text-center text-white p-2">Donde puedes encontrarme</h3>
-          <p className="text-center text-white p-2 montserrat ">¡Estoy emocionada por conocer tus ideas y proyectos! No dudes en escribirme</p>
+          <h3 className="text-center text-white p-2">{t("con_titulo")}</h3>
+          <p className="text-center text-white p-2 montserrat ">{t("con_descripcion")}</p>
           <div className="emojis">
             <img src={study} alt="emoji estudioso" />
             <img src={mano} alt="emoji mano" />

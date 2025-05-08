@@ -1,0 +1,72 @@
+{
+    "nav_inicio": "HOME",
+    "nav_perfil": "PROFILE",
+    "nav_educacion": "EDUCATION",
+    "nav_proyecto": "PROJECTS",
+    "nav_tecnologia": "TECHNOLOGIES",
+    "nav_contacto": "CONTACT",
+    "cab_ing": "Computer engineer",
+    "cab_dev": "Web Developer",
+    "cab_descripcion": "Hi! I'm Valentina, an engineer passionate about programming and robotics. At 23 years old, I love learning, solving problems and creating impactful technological solutions.",
+    "per_titulo": "About me",
+    "per_descripcion_1": "I'm passionate about developing applications, games and iOT projects with microcontrollers.",
+    "per_descripcion_2": "I enjoy working in a team where I can combine my experience in web development and my interest in technology to create innovative solutions.",
+    "per_descripcion_3": "I'm always looking for new challenges that allow me to learn and grow professionally.",
+    "edu_titulo": "Degrees and Courses",
+    "edu_items": [
+        {
+            "titulo": "Computer Engineering",
+            "detalle_1": "National University of La Plata",
+            "detalle_2": "Average"
+        },
+        {
+            "titulo": "Complete Web Development HTML5,CSS3, JS AJAX PHP & MySQL"
+        },
+        {
+            "titulo": "React & Typescript - The practical guide"
+        },
+        {
+            "nivel": "Basic",
+            "descripcion": "Skills certification test"
+        },
+        {
+            "titulo": "Master TypeScript: Integration with React"
+        },
+        {
+            "titulo": "Bachiller in social sciences",
+            "detalle": "Average"
+        }
+    ],
+    "pro_titulo": "PROJECTS",
+    "pro_boton": "See Proyect",
+    "pro_list": [
+        {
+            "titulo": "Valentech",
+            "descripcion": "E-commerce store created as a final project for Coder House's Reactjs course",
+            "url": "https://valentech.netlify.app/"
+        },
+        {
+            "titulo": "Freelancer",
+            "descripcion": "Web development project done with HTML & CSS in Udemy's fullstack course",
+            "url": "https://clever-bubblegum-0389a8.netlify.app"
+        },
+        {
+            "titulo": "Coffee Blog",
+            "descripcion": "Web development project done with HTML & CSS in Udemy's fullstack course",
+            "url": "https://coruscating-centaur-78f2d6.netlify.app/"
+        },
+        {
+            "titulo": "Ros2 Gesture Car",
+            "descripcion": "Team project for the robotics subject where an autonomous car with ROS communication was built",
+            "url": "https://github.com/marigisee/ROS2-GestureCar"
+        },
+        {
+            "titulo": "React + TypeScript + Redux + Context API",
+            "descripcion": "Project that combines different context management techniques in 3 available examples",
+            "url": "https://valenfanelli.github.io/react-ts-context-redux/"
+        }
+    ],
+    "tec_titulo": "TECHNOLOGIES",
+    "con_titulo": "Where you can find me",
+    "con_descripcion": "¡I'm excited to hear about your ideas and projects! Don't hesitate to write to me."
+}
