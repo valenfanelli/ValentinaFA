@@ -8,7 +8,7 @@ function Cabecera() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center vh-100 bg-inicio roboto-mono">
+      <div className="d-flex justify-content-center align-items-center vh-150 bg-inicio roboto-mono">
         <div className="text-center">
           <div className="container fade-in-up">
             <h1 className="text-uppercase main-title">
