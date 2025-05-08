@@ -8,7 +8,7 @@ export const NavBar = () => {
   const { t } = useTranslation();
     return <>
         <nav className="navbar navbar-expand-lg bg-nav navnav roboto-mono">
-            <div className="navbar-nav nav-left text-center mx-auto m-3 fs-6">
+            <div className="navbar-nav fs-6">
                 <Link className="nav-item nav-link text-white" to="/">{t("nav_inicio")}</Link>
                 <Link className="nav-item nav-link text-white" to="/perfil">{t("nav_perfil")}</Link>
                 <Link className="nav-item nav-link text-white" to="/educacion">{t("nav_educacion")}</Link>
@@ -16,7 +16,7 @@ export const NavBar = () => {
                 <Link className="nav-item nav-link text-white" to="/tecnologias">{t("nav_tecnologia")}</Link>
                 <Link className="nav-item nav-link text-white" to="/contacto">{t("nav_contacto")}</Link>
             </div>
-            <Language className="lang-toggle nav-right"/>
+            <Language className="lang-toggle"/>
         </nav>
     </>
 }
