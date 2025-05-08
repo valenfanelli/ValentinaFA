@@ -1,5 +1,5 @@
 {
-    "nav_inicio": "HOME",
+    "nav_inicio": "HOMEPAGE",
     "nav_perfil": "PROFILE",
     "nav_educacion": "EDUCATION",
     "nav_proyecto": "PROJECTS",
@@ -7,10 +7,10 @@
     "nav_contacto": "CONTACT",
     "cab_ing": "Computer engineer",
     "cab_dev": "Web Developer",
-    "cab_descripcion": "Hi! I'm Valentina, an engineer passionate about programming and robotics. At 23 years old, I love learning, solving problems and creating impactful technological solutions.",
+    "cab_descripcion": "Hi! I'm Valentina, an 23-year-old engineer passionate about programming and robotics. I love learning, solving problems and creating impactful technological solutions.",
     "per_titulo": "About me",
-    "per_descripcion_1": "I'm passionate about developing applications, games and iOT projects with microcontrollers.",
-    "per_descripcion_2": "I enjoy working in a team where I can combine my experience in web development and my interest in technology to create innovative solutions.",
+    "per_descripcion_1": "I'm passionate about developing applications, games, and IOT projects which use microcontrollers.",
+    "per_descripcion_2": "I enjoy working in teams where I can combine my experience in web development and my interest in technology to create innovative solutions.",
     "per_descripcion_3": "I'm always looking for new challenges that allow me to learn and grow professionally.",
     "edu_titulo": "Degrees and Courses",
     "edu_items": [
@@ -68,5 +68,5 @@
     ],
     "tec_titulo": "TECHNOLOGIES",
     "con_titulo": "Where you can find me",
-    "con_descripcion": "¡I'm excited to hear about your ideas and projects! Don't hesitate to contact me."
+    "con_descripcion": "I'm excited to hear about your ideas and projects! Don't hesitate to contact me."
 }
