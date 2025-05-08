@@ -17,7 +17,7 @@ function Educacion() {
                                 </div>
                                 <ul>
                                     <li>{items[0].detalle_1}</li>
-                                    <li>{items[0].detalle_2} 8.2</li>
+                                    <li>{items[0].detalle_2} 7.98</li>
                                     <li>2024</li>
                                 </ul>
                             </div>
