@@ -7,7 +7,7 @@ import { Language } from './Language';
 export const NavBar = () => {
   const { t } = useTranslation();
     return <>
-        <nav className="navbar navbar-expand-lg bg-nav navnav roboto-mono">
+        <nav className="navbar navbar-expand-lg bg-nav roboto-mono">
             <div className="navbar-nav fs-6">
                 <Link className="nav-item nav-link text-white" to="/">{t("nav_inicio")}</Link>
                 <Link className="nav-item nav-link text-white" to="/perfil">{t("nav_perfil")}</Link>
