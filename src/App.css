@@ -368,6 +368,11 @@ h3 {
     align-items: center;
     justify-content: center;
   }
+  .navbar.ocultar {
+    display: none;
+    visibility: hidden;
+  }
+  
   .main-title {
     font-size: 2.5rem;
   }
@@ -422,8 +427,20 @@ h3 {
 .menu-icon {
   display: none;
   visibility: hidden;
-  font-size: 2rem;
-  @media (max-width: 768px) {
+  font-size: 3rem;
+  position: absolute;
+  color: white;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2000; /* asegurarse que esté por encima de todo */
+  cursor: pointer;
+  :hover {
+    color: #1c7b9b;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-icon {
     display: block;
     visibility: visible;
   }

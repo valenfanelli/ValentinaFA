@@ -6,8 +6,15 @@ import { Language } from './Language';
 
 export const NavBar = () => {
   const { t } = useTranslation();
+  const [abierto, setAbierto] = useState(false);
+  function toggleMenu(){
+    abierto? setAbierto(false) : setAbierto(true);
+  }
     return <>
-        <nav className="navbar navbar-expand-lg bg-nav roboto-mono">
+        <a className="icon menu-icon" onClick={toggleMenu}>
+            <i className="fa fa-bars"></i>
+        </a>
+        <nav className={`navbar ${!abierto? 'ocultar' : ''} navbar-expand-lg bg-nav roboto-mono`}>
             <div className="navbar-nav fs-6">
                 <Link className="nav-item nav-link text-white" to="/">{t("nav_inicio")}</Link>
                 <Link className="nav-item nav-link text-white" to="/perfil">{t("nav_perfil")}</Link>
