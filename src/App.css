@@ -435,7 +435,7 @@ h3 {
   z-index: 2000; /* asegurarse que esté por encima de todo */
   cursor: pointer;
   :hover {
-    color: #1c7b9b;
+    color: #1c2122;
   }
 }
 
@@ -453,8 +453,4 @@ h3 {
   cursor: pointer;
   font-size: 0.9rem;
   transition: background-color 0.2s;
-}
-
-.lang-toggle:hover {
-  background-color: #f0f0f0;
 }
