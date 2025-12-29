@@ -17,7 +17,7 @@ function Educacion() {
                                 </div>
                                 <ul>
                                     <li>{items[0].detalle_1}</li>
-                                    <li>{items[0].detalle_2} 7.98</li>
+                                    <li>{items[0].detalle_2} 8.2</li>
                                     <li>2024</li>
                                 </ul>
                             </div>
@@ -43,6 +43,28 @@ function Educacion() {
                                     <li>2024</li>
                                 </ul>
                             </div>
+
+                            <div className="item">
+                                <div className="titulo">    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945z" /></svg>
+                                    <p>Associate Cloud Engineer</p>
+                                </div>
+                                <ul>
+                                    <li>Google Cloud Careers</li>
+                                    <li>2025</li>
+                                </ul>
+                            </div>
+                            <div className="item">
+                                <div className="titulo">    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945z" /></svg>
+                                    <p>Cloud Digital Leader</p>
+                                </div>
+                                <ul>
+                                    <li>Google Cloud Careers</li>
+                                    <li>2025</li>
+                                </ul>
+                            </div>
+
                             <div className="item">
                                 <div className="titulo">    
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-typescript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" /><path d="M9 12h4" /><path d="M11 12v6" /><path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" /></svg>
