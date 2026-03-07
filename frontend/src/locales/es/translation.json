@@ -1,0 +1,40 @@
+{
+    "nav_inicio": "INICIO",
+    "nav_perfil": "PERFIL",
+    "nav_educacion": "EDUCACIÓN",
+    "nav_proyecto": "PROYECTOS",
+    "nav_tecnologia": "TECNOLOGÍAS",
+    "nav_contacto": "CONTACTO",
+    "cab_ing": "Ingeniera en Computación",
+    "cab_dev": "Desarrolladora Web",
+    "cab_descripcion": "¡Hola! Soy Valentina, una ingeniera apasionada por la programación y la robótica. Con 24 años, amo aprender, resolver problemas y crear soluciones tecnológicas impactantes.",
+    "per_titulo": "Sobre mí",
+    "per_descripcion_1": "Me apasiona el desarrollo de aplicaciones, juegos y proyectos de IoT con microcontroladores.",
+    "per_descripcion_2": "Disfruto trabajar en equipo, donde puedo combinar mi experiencia en desarrollo web y mi interés por la tecnología para crear soluciones innovadoras.",
+    "per_descripcion_3": "Siempre estoy en búsqueda de nuevos desafíos que me permitan aprender y crecer profesionalmente.",
+    "edu_titulo": "Grados y Cursos",
+    "edu_items": [
+        { "degree": "Ingeniera en computación", "institution": "Universidad Nacional de La Plata", "description": "Promedio 8.2", "endYear": 2024 },
+        { "degree": "React js", "institution": "Coder House", "description": "30 hs", "endYear": 2024 },
+        { "degree": "Desarrollo Web Completo con HTML5,CSS3, JS AJAX PHP y MySQL", "institution": "Udemy", "description": "83 hs", "endYear": 2024 },
+        { "degree": "Associate Cloud Engineer", "institution": "Google Cloud Careers", "description": null, "endYear": 2025 },
+        { "degree": "Cloud Digital Leader", "institution": "Google Cloud Careers", "description": null, "endYear": 2025 },
+        { "degree": "React & Typescript - La guía práctica", "institution": "Udemy", "description": "7.5 hs", "endYear": 2025 },
+        { "degree": "React (Basico)", "institution": "HackerRank", "description": "Prueba de certificación de habilidades", "endYear": 2025 },
+        { "degree": "SQL (Basico)", "institution": "HackerRank", "description": "Prueba de certificación de habilidades", "endYear": 2025 },
+        { "degree": "Domina TypeScript: Integración con React", "institution": "Linkedin Learning", "description": "1.1 hs", "endYear": 2025 },
+        { "degree": "Full Stack Java", "institution": "Codo a Codo 4.0", "description": "208 hs", "endYear": 2022 }
+    ],
+    "pro_titulo": "PROYECTOS",
+    "pro_boton": "Ver Proyecto",
+    "pro_items": [
+        { "title": "Valentech", "description": "Tienda de E-commerce realizada como proyecto final del curso Reactjs de Coder House", "url": "https://valentech.netlify.app/" },
+        { "title": "Freelancer", "description": "Proyecto de desarrollo web realizado con HTML y CSS en el curso fullstack de Udemy", "url": "https://clever-bubblegum-0389a8.netlify.app" },
+        { "title": "Blog de Café", "description": "Proyecto de desarrollo web realizado con HTML y CSS en el curso fullstack de Udemy", "url": "https://coruscating-centaur-78f2d6.netlify.app/" },
+        { "title": "Ros2 Gesture Car", "description": "Proyecto en equipo para la asignatura robótica donde se construyó un auto autónomo con comunicación ROS", "url": "https://github.com/marigisee/ROS2-GestureCar" },
+        { "title": "React + TypeScript + Redux + Context API", "description": "Proyecto que combina diferentes técnicas de gestión del contexto en 3 ejemplos disponibles", "url": "https://valenfanelli.github.io/react-ts-context-redux/" }
+    ],
+    "tec_titulo": "TECNOLOGÍAS",
+    "con_titulo": "Donde puedes encontrarme",
+    "con_descripcion": "¡Estoy emocionada por conocer tus ideas y proyectos! No dudes en escribirme"
+}

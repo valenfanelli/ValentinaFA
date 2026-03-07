@@ -1,0 +1,746 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import 'animations.css';
+
+/* ============================================================
+   BASE
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  overflow-x: clip;
+}
+
+.roboto-mono { font-family: 'Roboto Mono', monospace; }
+.montserrat  { font-family: 'Montserrat', sans-serif; }
+
+/* ============================================================
+   SECTION BACKGROUNDS
+   ============================================================ */
+
+/* Hero — animated dark gradient, full viewport */
+.bg-inicio {
+  position: relative;
+  background: linear-gradient(135deg, #04131a, #0a2a35, #0e3545, #071e26);
+  background-size: 300% 300%;
+  animation: gradient-animation 12s ease infinite;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Dot-grid texture on hero only */
+.bg-inicio::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(89, 209, 183, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-inicio > * { position: relative; z-index: 1; }
+
+@keyframes gradient-animation {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+/* All content sections — unified dark base with radial glow */
+.bg-sec {
+  position: relative;
+  background: #071e26;
+  color: #d4eaf0;
+  width: 100%;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.bg-sec::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, rgba(89, 209, 183, 0.045) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-sec > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.9rem 2rem;
+  background: rgba(7, 30, 38, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(89, 209, 183, 0.12);
+  color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: transform 0.35s ease;
+}
+
+.site-nav.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.site-nav .nav-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.06em;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.site-nav .nav-link:hover { color: #59d1b7; }
+
+.site-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #59d1b7;
+  border-radius: 1px;
+  transition: width 0.3s ease;
+}
+
+.site-nav .nav-link:hover::after { width: 100%; }
+
+.site-nav .btn-lang {
+  position: absolute;
+  right: 2rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .site-nav {
+    flex-wrap: wrap;
+    padding: 0.8rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+  }
+
+  .nav-links.nav-closed {
+    display: none;
+  }
+
+  .site-nav .btn-lang {
+    position: static;
+    margin-left: auto;
+  }
+}
+
+/* ============================================================
+   HERO — CABECERA
+   ============================================================ */
+.section-inicio { position: relative; }
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+
+.subtitle-container { margin-top: 1.5rem; }
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.highlight {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #59d1b7;
+  font-variant: small-caps;
+}
+
+.description {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animated scroll-down chevrons */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  animation: indicatorBounce 2s ease-in-out infinite;
+  z-index: 2;
+}
+
+.scroll-indicator span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid rgba(89, 209, 183, 0.7);
+  border-bottom: 2px solid rgba(89, 209, 183, 0.7);
+  transform: rotate(45deg);
+}
+
+.scroll-indicator span:nth-child(2) { opacity: 0.45; }
+
+@keyframes indicatorBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
+}
+
+/* ============================================================
+   SECTION HEADINGS — accent underline
+   ============================================================ */
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 14px;
+  margin-bottom: 2rem;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 3px;
+  background: #59d1b7;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   EDUCATION — featured banner + grid
+   ============================================================ */
+.edu-bento {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(89, 209, 183, 0.35);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(89, 209, 183, 0.08);
+}
+
+/* Featured card — full-width horizontal banner, centered */
+.edu-featured {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.8rem 2.5rem;
+  text-align: center;
+  border-color: rgba(89, 209, 183, 0.25);
+  background: linear-gradient(145deg, rgba(89, 209, 183, 0.08), rgba(255, 255, 255, 0.04));
+}
+
+.edu-featured .edu-card-icon svg {
+  width: 44px;
+  height: 44px;
+}
+
+.edu-featured .edu-card-degree {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.edu-featured .edu-card-institution {
+  font-size: 0.9rem;
+}
+
+.edu-featured .edu-card-desc {
+  font-size: 0.82rem;
+}
+
+.edu-featured .edu-card-year {
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Grid for the rest */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+/* Icon */
+.edu-card-icon svg {
+  width: 30px;
+  height: 30px;
+  color: #59d1b7;
+  flex-shrink: 0;
+}
+
+/* Degree name */
+.edu-card-degree {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Institution */
+.edu-card-institution {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Description */
+.edu-card-desc {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+}
+
+/* Year */
+.edu-card-year {
+  font-size: 0.72rem;
+  color: #59d1b7;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .edu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-featured {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .edu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* ============================================================
+   PROJECT CARDS — dark glass with glow
+   ============================================================ */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: stretch;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .proyectos { grid-template-columns: 1fr; }
+}
+
+.proyecto {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(89, 209, 183, 0.16);
+  border-radius: 14px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: translateY(-6px);
+  border-color: rgba(89, 209, 183, 0.5);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(89, 209, 183, 0.1);
+}
+
+.proyecto h5 {
+  color: #59d1b7;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.proyecto p {
+  font-size: 0.85rem;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(212, 234, 240, 0.82);
+  margin: 0;
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-custom {
+  display: inline-block;
+  background: transparent;
+  color: #59d1b7;
+  border: 1px solid rgba(89, 209, 183, 0.4);
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 0.82rem;
+  text-decoration: none;
+  align-self: center;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-custom:hover {
+  background: rgba(89, 209, 183, 0.12);
+  border-color: #59d1b7;
+  color: #ffffff;
+}
+
+.btn-lang {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-lang:hover {
+  border-color: #59d1b7;
+  color: #59d1b7;
+}
+
+/* ============================================================
+   TECH LOGOS — scattered floating cloud
+   ============================================================ */
+.tech-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.tech-float {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: transform 0.35s ease, filter 0.35s ease;
+  cursor: default;
+}
+
+.tech-float img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  opacity: 0.78;
+  filter: grayscale(0.2);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.tech-float:hover {
+  z-index: 2;
+}
+
+.tech-float:hover img {
+  opacity: 1;
+  filter: grayscale(0) drop-shadow(0 0 10px rgba(89, 209, 183, 0.35));
+}
+
+.tech-label {
+  position: absolute;
+  bottom: -1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #59d1b7;
+  font-size: 0.85rem;
+  font-family: 'Roboto Mono', monospace;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.tech-float:hover .tech-label {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .tech-cloud {
+    gap: 0.4rem;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+/* ============================================================
+   PROFILE
+   ============================================================ */
+.perfil-content {
+  max-width: 900px;
+  padding: 20px;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.icono-perfil {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid rgba(89, 209, 183, 0.28);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icono-perfil:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.5), 0 0 20px rgba(89, 209, 183, 0.12);
+}
+
+.perfil-texto {
+  color: rgba(212, 234, 240, 0.9);
+  font-size: 1rem;
+  line-height: 1.85;
+  padding-left: 24px;
+  border-left: 2px solid #59d1b7;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .perfil-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .icono-perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  .perfil-texto {
+    border-left: none;
+    border-top: 2px solid #59d1b7;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.enlaces {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  font-weight: lighter;
+  transition: color 0.2s ease;
+}
+
+.enlaces:hover { color: #59d1b7; }
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 1rem;
+  gap: 40px;
+}
+
+.contacto li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto p.enlaces { margin: 0; }
+
+.emojis {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.emojis img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .pagina-contacto {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contacto {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ============================================================
+   HAMBURGER MENU ICON
+   ============================================================ */
+.menu-icon {
+  display: none;
+  visibility: hidden;
+  font-size: 2.4rem;
+  position: fixed;
+  color: white;
+  right: 1.2rem;
+  top: 0.8rem;
+  z-index: 2000;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.35s ease;
+}
+
+.menu-icon.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.menu-icon:hover { color: #59d1b7; }
+
+@media (max-width: 992px) {
+  .menu-icon {
+    display: block;
+    visibility: visible;
+  }
+
+  .main-title { font-size: 2.2rem; }
+}
+
+/* ============================================================
+   LANGUAGE TOGGLE
+   ============================================================ */
+.lang-toggle {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: white;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.lang-toggle:hover {
+  border-color: #59d1b7;
+  color: #59d1b7;
+}
+
+/* ============================================================
+   SCROLL REVEAL — driven by IntersectionObserver in App.jsx
+   ============================================================ */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   MISC
+   ============================================================ */
+.custom-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
