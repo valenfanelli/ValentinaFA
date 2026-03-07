@@ -4,7 +4,7 @@ Personal portfolio website showcasing my education, projects, and tech skills. B
 
 ## Live Site
 
-Deployed on Netlify: [valentinafanelli.netlify.app](https://valentinafanelli.netlify.app) *(update with your actual URL)*
+Deployed on Netlify: [valentinafanelli.netlify.app](https://valentinafanelli.netlify.app)
 
 ## Features
 
